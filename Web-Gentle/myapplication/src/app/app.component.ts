@@ -24,4 +24,11 @@ export class AppComponent {
     src: "",
     alt: "Pro Pic"
   };
+
+  clickSave(): void{
+    this.name="Updated Mubasshir Raihan"
+  }
+  over(): void{
+    this.name="Over Clicked"
+  }
 }
