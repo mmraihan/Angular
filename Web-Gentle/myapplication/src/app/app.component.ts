@@ -31,4 +31,6 @@ export class AppComponent {
   over(): void{
     this.name="Over Clicked"
   }
+
+  isDisabled=false
 }
