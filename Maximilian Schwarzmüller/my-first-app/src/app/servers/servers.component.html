@@ -8,3 +8,8 @@ class="btn btn-primary" [disabled]="!allowNewServer" (click)= "onCreateServer()"
 <app-server></app-server>
 <app-server></app-server>
 
+<h1>Event Binding</h1>
+
+<input type="text" class="form-control" (input)="UpdateServerName($event)">
+<p>{{serverName}}</p>
+
