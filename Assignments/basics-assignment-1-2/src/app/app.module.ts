@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { AssTwoComponent } from './ass-two/ass-two.component';
+import { AssThreeComponent } from './ass-three/ass-three.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { AssTwoComponent } from './ass-two/ass-two.component';
     WarningAlertComponent,
     SuccessAlertComponent,
     AssTwoComponent,
+    AssThreeComponent,
   
   ],
   imports: [
