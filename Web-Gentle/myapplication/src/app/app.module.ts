@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { Router, RouterModule, Routes } from '@angular/router';
+import { ProductListComponent } from './product-list/product-list.component';
 
 const routes: Routes=[
   {path: 'about-us', component: AboutUsComponent},
@@ -17,6 +18,7 @@ const routes: Routes=[
     HomeComponent,
     AboutUsComponent,
     HowItWorksComponent,
+    ProductListComponent,
 
   ],
   imports: [
