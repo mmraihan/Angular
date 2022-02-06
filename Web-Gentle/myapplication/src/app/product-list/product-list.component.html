@@ -9,12 +9,10 @@
             <th scope="col">Price</th>
           </tr>
         </thead>
-        <tbody>
-          <tr *ngFor="let product of products" >
+        <tbody *ngFor="let p of products">
+          <tr>
+            <product-info [pro] =p></product-info>
             
-            <td>{{product.name}}</td>
-            <td>{{product.code}}</td>
-            <td>{{product.price}}</td>
           </tr>
 
         </tbody>
