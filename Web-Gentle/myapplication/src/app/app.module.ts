@@ -8,6 +8,7 @@ import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { Router, RouterModule, Routes } from '@angular/router';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductInfoComponent } from './product-info/product-info.component';
+import { ChildComponent } from './child/child.component';
 
 const routes: Routes=[
   {path: 'about-us', component: AboutUsComponent},
@@ -21,6 +22,7 @@ const routes: Routes=[
     HowItWorksComponent,
     ProductListComponent,
     ProductInfoComponent,
+    ChildComponent,
 
   ],
   imports: [

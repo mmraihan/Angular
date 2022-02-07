@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  userLogedIn =true;
   name: string = 'Mubasshir raihan';
 
   getName(data: number): string {
@@ -34,3 +35,4 @@ export class AppComponent {
 
   isDisabled=false
 }
+
