@@ -1,5 +1,6 @@
 import { newArray } from '@angular/compiler/src/util';
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  userLogedIn =true;
   name: string = 'Mubasshir raihan';
 
   getName(data: number): string {
@@ -34,5 +34,12 @@ export class AppComponent {
   }
 
   isDisabled=false
+
+  userData: any={}
+
+  getData(data: NgForm){
+    console.warn(data)
+    this.userData=data;
+  }
 }
 
