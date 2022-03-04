@@ -1,3 +1,4 @@
+import { flatten } from '@angular/compiler';
 import { newArray } from '@angular/compiler/src/util';
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
@@ -40,6 +41,10 @@ export class AppComponent {
   getData(data: NgForm){
     console.warn(data)
     this.userData=data;
+  }
+ display=false;
+  toggle(){
+    this.display=!this.display
   }
 }
 

@@ -10,5 +10,9 @@
        <p>{{userData.user}}</p>
        <p>{{userData.email}}</p>
        <p>{{userData.password}}</p>
+
+
+       <h1 *ngIf="display">Heading</h1>
+       <button (click)="toggle()">Toggle</button>
 </div>
 
