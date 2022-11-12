@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ServerComponent } from './../server/server.component';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-cockpit',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cockpit.component.css']
 })
 export class CockpitComponent implements OnInit {
+
+  @ViewChild(ServerComponent) serverComponent: ServerComponent;
   
   newServerName='';
   newServerContent='';
@@ -31,6 +34,14 @@ export class CockpitComponent implements OnInit {
     //   name: this.newServerName,
     //   content: this.newServerContent
     // });
+  }
+
+
+  increase(){
+    this.serverComponent.increeaseNumber();
+  }
+  decrease(){
+    this.serverComponent.decreaseNumber();
   }
 
 }
