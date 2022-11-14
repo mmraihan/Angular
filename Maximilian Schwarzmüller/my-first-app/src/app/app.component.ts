@@ -1,16 +1,16 @@
+import { UserService } from './services/user.service';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  //styleUrls: ['./app.component.css']
-  styles:[`
-    h3{
-      color: red;
-    }
-  `]
+  //styleUrls: ['./app.component.css'],
+  providers:[UserService]
+ 
 })
 export class AppComponent {
-  serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test!'}];
+  
+constructor( private userService: UserService){
 
+}
 }

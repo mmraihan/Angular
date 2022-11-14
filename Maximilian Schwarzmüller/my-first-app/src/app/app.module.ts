@@ -7,6 +7,8 @@ import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
+import { AllusersComponent } from './user/allusers/allusers.component';
+import { UserDetailsComponent } from './user/user-details/user-details.component';
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { ServerElementComponent } from './server-element/server-element.componen
     ServersComponent,
     CockpitComponent,
     ServerElementComponent,
+    AllusersComponent,
+    UserDetailsComponent,
   
   ],
   imports: [
