@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,22 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   providers: [],
 })
 export class AppComponent implements OnInit {
-  genders = ['male', 'female'];
+  genders = ['Male', 'Female'];
+
+  signupForm: FormGroup;
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.signupForm= new FormGroup({
+      'username': new FormControl(null),
+      'email': new FormControl(null),
+      'gender': new FormControl('Male'),
+    });
+
+  }
+
+  onSubmit(){
+    console.log(this.signupForm.value)
+  }
 }
